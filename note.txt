@@ -1,0 +1,11 @@
+https://medium.com/@michaelliu36/what-makes-a-player-score-nba-ppg-predictions-from-a-college-data-scientist-3086f9fbb23
+https://www.datarobot.com/blog/using-datarobot-to-predict-nba-player-performance/
+
+1. 어떤 스탯이 득점과 가장 상관관계가 높은지 찾는다.
+2. 선수별로 경기와 해당일자-1일의 데이터를 찾고, 그 경기의 결과(득점)을 기록하여 정답지로 활용
+3. 트레인셋은 스탯이 되고 득점이 정답지가 된다.
+
+Last5Match 데이터를 통해 GmSc, FIC 산출 -> 홈/원정, 디비전승률별 가중치 부여 -> 실제 득점과 비교 (넘었으면 1, 못넘었으면 0)
+데이터셋을 만들어야함
+
+날짜, 날짜기준최근다섯경기스탯, (산출된GmSc,FIC)/5, (실득점/5), 결과
